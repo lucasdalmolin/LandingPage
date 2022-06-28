@@ -112,7 +112,6 @@ import {
 } from "react-router-dom";
 
 import RequestLandingPage from "main/RequestLandingPage";
-import AboutUs from "pages/AboutUs";
 import Hero from "components/hero/BackgroundAsImage";
 import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
@@ -125,6 +124,12 @@ import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
+import BlogIndex from "pages/BlogIndex";
+import AboutUs from "pages/AboutUs";
+import ContactUs from "pages/ContactUs";
+import Signup from "pages/Signup";
+
+
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
@@ -133,9 +138,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<RequestLandingPage />} >
-          <Route path=":about" element={<MainFeature />} />
-        </Route>
+        <Route path="/" element={<RequestLandingPage />} />
+        <Route path="/about" element={<AboutUs />} />
+
+        <Route path="/contact" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );

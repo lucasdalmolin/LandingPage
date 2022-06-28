@@ -4,31 +4,29 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "components/hero/BackgroundAsImage";
-import Features from "components/features/DashedBorderSixFeatures";
-import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
-import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
-import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
-import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
-import FAQ from "components/faqs/SimpleWithSideImage.js";
-import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
+import Home from 'components/hero/BackgroundAsImageWithCenteredContent'
+import About from "components/features/TwoColSingleFeatureWithStats2.js";
+import ProfessionalServices from "components/features/DashedBorderSixFeatures";
+import EskerSolutions from "components/features/TwoColWithTwoFeaturesAndButtons.js";
+import Customers from "components/cards/PortfolioTwoCardsWithImage.js";
+import Partners from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
+import Company from "components/forms/TwoColContactUsWithIllustration.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
-import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
 export default () => (
   
 
   //Para desabilitar la animacion de entrada de la pagina hay que poner disabled delante de AnimationRevealPage: <AnimationRevealPage disabled ></AnimationRevealPage>
 
-  //Necesito 6 secciones nomas como mucho 7 y tengo 10.
   <AnimationRevealPage disabled>
-    <Hero />
-    <MainFeature />
-    <Features />
-    <MainFeature2 />
-    <Portfolio />
-    <Testimonial
-      subheading="Testimonials"
+    <Home />
+    {/* Tengo que contar 6 paginas + home + footer = 8 */}
+    <About />
+    <ProfessionalServices />
+    <EskerSolutions />
+    <Customers />
+    <Partners
+      subheading="Partners"
       heading={
         <>
           Our Clients <span tw="text-primary-500">Love Us.</span>
@@ -59,19 +57,7 @@ export default () => (
       ]}
       textOnLeft={true}
     />
-    <FAQ
-      imageSrc={customerSupportIllustrationSrc}
-      imageContain={true}
-      imageShadow={false}
-      subheading="FAQs"
-      heading={
-        <>
-          Do you have <span tw="text-primary-500">Questions ?</span>
-        </>
-      }
-    />
-    <Blog target="#" path="/blog"/>
-    <ContactUsForm />
+    <Company />
     <Footer />
   </AnimationRevealPage>
 );

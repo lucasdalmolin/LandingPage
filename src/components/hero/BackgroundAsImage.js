@@ -22,9 +22,9 @@ const Container = styled.div`
   background-image: url("https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
 `;
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-red-300 bg-black opacity-25`;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-red-300 bg-black opacity-0`;
 
-const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
+const HeroContainer = tw.div`z-0 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
@@ -82,17 +82,18 @@ export default () => {
       
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
+      <PrimaryLink tw="inline-block" href="/#">
+        Contact Us
       </PrimaryLink>
     </NavLinks>
   ];
 
   return (
     <Container>
+      <StyledHeader tw="bg-red-800 fixed h-20 w-screen z-20 p-8 shadow-xl" links={navLinks} />
+      <br/>
       <OpacityOverlay />
       <HeroContainer>
-        <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
             <Notification>Siempre en crecimiento...</Notification>
@@ -108,9 +109,9 @@ export default () => {
               </NavLink>
             </PrimaryAction>
           </LeftColumn>
-          <RightColumn>
-            {/* Aca podria ir otra cosa */}
-          </RightColumn>
+          {/* <RightColumn>
+            
+          </RightColumn> */}
         </TwoColumn>
       </HeroContainer>
     </Container>
