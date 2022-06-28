@@ -34,10 +34,10 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-3xl! ml-0!`};
+  ${tw`flex items-center font-black border-b-0 text-4xl! ml-0!`};
 
   img {
-    ${tw`w-10 mr-3`}
+    ${tw`w-32 pt-3`}
   }
 `;
 
@@ -126,8 +126,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     //   REQUEST <br/>
     //   Information Technology
     // </LogoLink>
-    <LogoLink tw="w-24" href="/">
-      <img src={logo} alt="logo" tw="w-24"/>
+    <LogoLink href="/">
+      <img src={logo} alt="logo"/>
     </LogoLink>
   );
 

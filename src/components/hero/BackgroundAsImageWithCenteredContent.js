@@ -39,7 +39,7 @@ const Container = styled.div`
 
 // PRUEBA FONDO COLOR
 
-const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black bg-red-900 opacity-0 `;
+const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-50 `;
 
 const HeroContainer = tw.div`z-10 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
 const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
@@ -86,17 +86,17 @@ export default () => {
 
   return (
     <Container>
-      <StyledHeader tw="bg-red-900 bg-gradient-to-r from-red-700 via-red-700 fixed h-20 w-screen z-20 p-8 shadow-xl" links={navLinks} />
+      <StyledHeader tw="bg-red-900 bg-gradient-to-r from-red-700 via-red-700 fixed h-20 w-screen z-20 p-10 shadow-xl" links={navLinks} />
       <br/>
       <OpacityOverlay />
       <HeroContainer>
         <Content>
           <Heading>
-              Book Music & Comedy Events
+              REQUEST
               <br />
-              anywhere in New York
+              Information Technology
           </Heading>
-          <PrimaryAction tw="bg-gradient-to-r from-red-700 to-red-900 hocus:to-red-500 transition duration-300 ease-out hocus:ease-in">Search Events Near Me</PrimaryAction>
+          <PrimaryAction tw="bg-gradient-to-r from-red-700 to-red-900 hocus:to-red-500 transition duration-300 ease-out hocus:ease-in">Abous Us</PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>

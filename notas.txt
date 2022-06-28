@@ -26,3 +26,6 @@ subir archivos a github y hacer andar la pagina
 
 voy a las 8 el miercoles 29
 
+"deploy": "yarn build && netlify deploy --prod --dir=build"
+
+npm run deploy
