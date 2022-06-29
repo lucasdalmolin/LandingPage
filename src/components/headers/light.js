@@ -90,22 +90,22 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   // ];
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/about">
+      <NavLink>
         About
       </NavLink>
-      <NavLink href="/contact">
+      <NavLink>
         Professional Services
       </NavLink>
-      <NavLink href="#">
+      <NavLink>
         Esker Solutions
       </NavLink>
-      <NavLink href="#">
+      <NavLink>
         Customers
       </NavLink>
-      <NavLink href="#">
+      <NavLink>
         Partners
       </NavLink>
-      <NavLink href="#">
+      <NavLink>
         Company
       </NavLink>
       

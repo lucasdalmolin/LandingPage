@@ -21,7 +21,10 @@ export default () => (
   <AnimationRevealPage disabled>
     <Home />
     {/* Tengo que contar 6 paginas + home + footer = 8 */}
-    <About />
+    <About
+      subheading = "About Us"
+      description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    />
     <ProfessionalServices />
     <EskerSolutions />
     <Customers />

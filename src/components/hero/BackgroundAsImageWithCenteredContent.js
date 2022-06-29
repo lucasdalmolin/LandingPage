@@ -57,24 +57,24 @@ hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/about">
-        About
-      </NavLink>
-      <NavLink href="/contact">
-        Professional Services
-      </NavLink>
-      <NavLink href="#">
-        Esker Solutions
-      </NavLink>
-      <NavLink href="#">
-        Customers
-      </NavLink>
-      <NavLink href="#">
-        Partners
-      </NavLink>
-      <NavLink href="#">
-        Company
-      </NavLink>
+        <NavLink href="/about">
+          About
+        </NavLink>
+        <NavLink href="/profservices">
+          Professional Services
+        </NavLink>
+        <NavLink href="/eskersol">
+          Esker Solutions
+        </NavLink>
+        <NavLink href="/customers">
+          Customers
+        </NavLink>
+        <NavLink href="/partners">
+          Partners
+        </NavLink>
+        <NavLink href="/company">
+          Company
+        </NavLink>
       
     </NavLinks>,
     <NavLinks key={2}>

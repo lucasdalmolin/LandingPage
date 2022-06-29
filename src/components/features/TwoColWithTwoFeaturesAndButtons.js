@@ -46,7 +46,7 @@ const FeatureDescription = tw.div`mt-1 text-sm`;
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0 bg-red-700 hocus:bg-red-500`;
 
 export default ({
-  subheading = "Our Expertise",
+  subheading = "Esker Solutions",
   heading = (
     <>
       We have the most <span tw="text-red-700">professional</span> marketing team.

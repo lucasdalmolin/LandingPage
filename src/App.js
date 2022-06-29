@@ -125,9 +125,14 @@ import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
 import BlogIndex from "pages/BlogIndex";
-import AboutUs from "pages/AboutUs";
+import AboutUs from "requestpages/AboutUs";
 import ContactUs from "pages/ContactUs";
 import Signup from "pages/Signup";
+import ProfesionalServices from "requestpages/ProfesionalServices";
+import EskerSolutions from "requestpages/EskerSolutions";
+import Customers from "requestpages/Customers";
+import Partners from "requestpages/Partners";
+import Company from "requestpages/Company";
 
 
 export default function App() {
@@ -140,8 +145,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<RequestLandingPage />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/profservices" element={<ProfesionalServices />} />
+        <Route path="/eskersol" element={<EskerSolutions />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/company" element={<Company />} />
 
-        <Route path="/contact" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
