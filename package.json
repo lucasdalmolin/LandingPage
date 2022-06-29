@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^14.2.1",
     "feather-icons": "^4.29.0",
     "framer-motion": "^6.3.16",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
@@ -30,7 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app",

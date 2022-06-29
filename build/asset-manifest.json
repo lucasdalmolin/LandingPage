@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LandingPage/static/css/main.97bf484e.css",
-    "main.js": "/LandingPage/static/js/main.05766ef1.js",
+    "main.js": "/LandingPage/static/js/main.bec8d77c.js",
     "static/media/AgencyLandingPage.jpeg": "/LandingPage/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
     "static/media/PrivacyPolicyPage.jpeg": "/LandingPage/static/media/PrivacyPolicyPage.87eaa1f87d0f370b9a87.jpeg",
     "static/media/TermsOfServicePage.jpeg": "/LandingPage/static/media/TermsOfServicePage.353b0a2b07abc9f66a90.jpeg",
@@ -72,14 +72,14 @@
     "static/media/fast-icon.svg": "/LandingPage/static/media/fast-icon.c817eaae4f477b6b49a5de0e8d3088b3.svg",
     "static/media/checkbox-circle.svg": "/LandingPage/static/media/checkbox-circle.c832bc13b4ac2a9304c79cee4fa76d18.svg",
     "static/media/facebook-icon.svg": "/LandingPage/static/media/facebook-icon.8f6512c4ee4f21763666f0f3b69d970d.svg",
-    "static/media/logo.svg": "/LandingPage/static/media/logo.b37651428c601ad6aea9c19640b8789f.svg",
+    "static/media/logo.svg": "/LandingPage/static/media/logo.2d9d647947dfc58e90b941cc08968e4f.svg",
     "static/media/arrow-left-3-icon.svg": "/LandingPage/static/media/arrow-left-3-icon.f376fd1df9a4c3eb7046b7ce32819f59.svg",
     "static/media/arrow-right-3-icon.svg": "/LandingPage/static/media/arrow-right-3-icon.ef97d24bb5be1dc7e33a539fbd8a0fc0.svg",
     "main.97bf484e.css.map": "/LandingPage/static/css/main.97bf484e.css.map",
-    "main.05766ef1.js.map": "/LandingPage/static/js/main.05766ef1.js.map"
+    "main.bec8d77c.js.map": "/LandingPage/static/js/main.bec8d77c.js.map"
   },
   "entrypoints": [
     "static/css/main.97bf484e.css",
-    "static/js/main.05766ef1.js"
+    "static/js/main.bec8d77c.js"
   ]
 }
