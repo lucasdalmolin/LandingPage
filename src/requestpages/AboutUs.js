@@ -36,28 +36,31 @@ const Container = styled.div`
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
 
-    const navLinks = [
-      <NavLinks key={1}>
-        <NavLink href="/about">
-          About
-        </NavLink>
-        <NavLink href="/profservices">
-          Professional Services
-        </NavLink>
-        <NavLink href="/eskersol">
-          Esker Solutions
-        </NavLink>
-        <NavLink href="/customers">
-          Customers
-        </NavLink>
-        <NavLink href="/partners">
-          Partners
-        </NavLink>
-        <NavLink href="/company">
-          Company
-        </NavLink>
-        
-      </NavLinks>,
+ //const rutaServidor = "/"; //Pruebas
+  const rutaServidor = "/requestsa"; //produccion
+
+  const navLinks = [
+    <NavLinks key={1}>
+      <NavLink href={ rutaServidor + "/about" }>
+        About
+      </NavLink>
+      <NavLink href={ rutaServidor + "/profservices" }>
+        Professional Services
+      </NavLink>
+      <NavLink href={ rutaServidor + "/eskersol" }>
+        Esker Solutions
+      </NavLink>
+      <NavLink href={ rutaServidor + "/customers" }>
+        Customers
+      </NavLink>
+      <NavLink href={ rutaServidor + "/partners" }>
+        Partners
+      </NavLink>
+      <NavLink href={ rutaServidor + "/company" }>
+        Company
+      </NavLink>
+      
+    </NavLinks>,
       <NavLinks key={2}>
         <PrimaryLink tw="inline-block bg-gradient-to-r from-red-700 to-red-500 hocus:to-red-900" href="/#">
           Contact Us

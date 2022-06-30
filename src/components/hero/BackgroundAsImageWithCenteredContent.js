@@ -55,24 +55,28 @@ const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-bas
 hocus:text-gray-200 focus:outline-none focus:shadow-outline`;
 
 export default () => {
+
+  //const rutaServidor = "/"; //Pruebas
+  const rutaServidor = "/requestsa"; //produccion
+
   const navLinks = [
     <NavLinks key={1}>
-        <NavLink href="/about">
+      <NavLink href={ rutaServidor + "/about" }>
           About
         </NavLink>
-        <NavLink href="/profservices">
+        <NavLink href={ rutaServidor + "/profservices" }>
           Professional Services
         </NavLink>
-        <NavLink href="/eskersol">
+        <NavLink href={ rutaServidor + "/eskersol" }>
           Esker Solutions
         </NavLink>
-        <NavLink href="/customers">
+        <NavLink href={ rutaServidor + "/customers" }>
           Customers
         </NavLink>
-        <NavLink href="/partners">
+        <NavLink href={ rutaServidor + "/partners" }>
           Partners
         </NavLink>
-        <NavLink href="/company">
+        <NavLink href={ rutaServidor + "/company" }>
           Company
         </NavLink>
       

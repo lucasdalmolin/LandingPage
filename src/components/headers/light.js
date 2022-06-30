@@ -76,36 +76,28 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    * changing the defaultLinks variable below below.
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
-  // const defaultLinks = [
-  //   <NavLinks key={1}>
-  //     <NavLink href="/#">About</NavLink>
-  //     <NavLink href="/#">Blog</NavLink>
-  //     <NavLink href="/#">Pricing</NavLink>
-  //     <NavLink href="/#">Contact Us</NavLink>
-  //     <NavLink href="/#" tw="lg:ml-12!">
-  //       Login
-  //     </NavLink>
-  //     <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink>
-  //   </NavLinks>
-  // ];
+
+  //const rutaServidor = "/"; //Pruebas
+  const rutaServidor = "/requestsa"; //produccion
+
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink>
+      <NavLink href={ rutaServidor + "/about" }>
         About
       </NavLink>
-      <NavLink>
+      <NavLink href={ rutaServidor + "/profservices" }>
         Professional Services
       </NavLink>
-      <NavLink>
+      <NavLink href={ rutaServidor + "/eskersol" }>
         Esker Solutions
       </NavLink>
-      <NavLink>
+      <NavLink href={ rutaServidor + "/customers" }>
         Customers
       </NavLink>
-      <NavLink>
+      <NavLink href={ rutaServidor + "/partners" }>
         Partners
       </NavLink>
-      <NavLink>
+      <NavLink href={ rutaServidor + "/company" }>
         Company
       </NavLink>
       
@@ -126,7 +118,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     //   REQUEST <br/>
     //   Information Technology
     // </LogoLink>
-    <LogoLink href="/">
+    <LogoLink href="/requestsa">
       <img src={logo} alt="logo"/>
     </LogoLink>
   );

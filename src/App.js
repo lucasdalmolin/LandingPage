@@ -139,17 +139,19 @@ export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
 
+  //const rutaServidor = "/"; //Pruebas
+  const rutaServidor = "/requestsa"; //produccion
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<RequestLandingPage />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/profservices" element={<ProfesionalServices />} />
-        <Route path="/eskersol" element={<EskerSolutions />} />
-        <Route path="/customers" element={<Customers />} />
-        <Route path="/partners" element={<Partners />} />
-        <Route path="/company" element={<Company />} />
+        <Route path={rutaServidor} element={<RequestLandingPage />} />
+        <Route path={rutaServidor + "/about"} element={<AboutUs />} />
+        <Route path={rutaServidor +"/profservices"} element={<ProfesionalServices />} />
+        <Route path={rutaServidor + "/eskersol"} element={<EskerSolutions />} />
+        <Route path={rutaServidor + "/customers"} element={<Customers />} />
+        <Route path={rutaServidor + "/partners"} element={<Partners />} />
+        <Route path={rutaServidor + "/company"} element={<Company />} />
 
       </Routes>
     </BrowserRouter>
